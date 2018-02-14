@@ -40,6 +40,8 @@ exports.styles = {
 ```
 import { css, styles } from 'your-css-project';
 ...
-export default (<div className={css(styles.Table, isActive && styles.ButtonActive)}> ... </div>);
+export default (<button className={css(styles.Button, isActive && styles.ButtonActive)}> ... </button>);
+...
+export default (<div className={css(styles.Table)}> ... </div>);
 ```
 ... and as an added bonus, it generates `<filename>.d.ts` (e.g. `styles.d.ts`) for your pleasure, so you know if something changes and you're doing the wrong thing because your downstream project won't compile.
