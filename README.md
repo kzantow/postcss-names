@@ -26,11 +26,11 @@ For example, if you have the following CSS:
 ```
 exports.styles = {
     Table: "Table",
-    ButtonActive: "Button-active",
     Button: {
         active: "Button.active", // this is from .Button.active
         toString() { return "Button" }
     }
+    ButtonActive: "Button-active",
     // .SomethingElse .SomeChildren is omitted
 }
 ```
